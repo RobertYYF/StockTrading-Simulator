@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.stocksimulator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="Yao's Finance"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StockSimulator">
+
+        <activity android:name=".ui.LoginActivity" android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".ui.ResigterActivity" android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".ui.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.MainActivity" android:windowSoftInputMode="adjustPan"/>
+
+        <service android:name=".service.RefreshService">
+            <intent-filter >
+                <action android:name="backgroundUpdate"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

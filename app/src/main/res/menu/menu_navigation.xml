@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--id 对应navigation的id-->
+    <item
+        android:id="@id/homeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        tools:layout="@layout/fragment_home"
+        android:title="@string/homeTitle" />
+    <item
+        android:id="@id/watchlistFragment"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        tools:layout="@layout/fragment_watchlist"
+        android:title="@string/watchlistTitle" />
+    <item
+        android:id="@id/profitFragment"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        tools:layout="@layout/fragment_profit"
+        android:title="@string/profitTitle" />
+
+</menu>

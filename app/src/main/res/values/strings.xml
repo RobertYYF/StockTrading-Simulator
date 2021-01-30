@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StockSimulator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="homeTitle">Home</string>
+    <string name="watchlistTitle">Watchlist</string>
+    <string name="profitTitle">Profit</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确认</string>
+
+
+</resources>

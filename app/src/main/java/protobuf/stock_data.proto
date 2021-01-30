@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "protoData";
+option java_outer_classname = "StockDataProto";
+
+message SingleStock {
+    string stock_id = 1;
+    string stock_name = 2;
+    float stock_price = 3;
+    float stock_change = 4;
+}
+
+message AllStock {
+    repeated SingleStock stock = 1;
+}

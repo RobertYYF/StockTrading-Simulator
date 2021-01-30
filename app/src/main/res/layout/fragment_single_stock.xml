@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".ui.SingleStockFragment">
+
+
+    <TextView
+        android:id="@+id/stockName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/stockCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/stockPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="10dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="100dp"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="100dp"
+        android:paddingBottom="40dp">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#8C9EFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="add to watchlist" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="130dp">
+
+        <Button
+            android:id="@+id/buyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#8C9EFF"
+            android:text="buy" />
+
+    </LinearLayout>
+
+</LinearLayout>
