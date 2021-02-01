@@ -1,5 +1,6 @@
 package com.example.stocksimulator.ui;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -40,8 +41,18 @@ public class HomeFragment extends Fragment {
         indexPrice = view.findViewById(R.id.indexValue);
         indexChange = view.findViewById(R.id.indexPercent);
 
+        float change = Float.parseFloat(MarketInfo.getInstance().getCompositeIndex().getPercent());
+
+        if (change >= 0) {
+            indexChange.setTextColor(Color.RED);
+            indexPrice.setTextColor(Color.RED);
+        } else {
+            indexChange.setTextColor(Color.GREEN);
+            indexPrice.setTextColor(Color.GREEN);
+        }
+
         indexPrice.setText(MarketInfo.getInstance().getCompositeIndex().getPrice().toString());
-//        indexChange.setText(MarketInfo.getInstance().getCompositeIndex().getPercent());
+        indexChange.setText(MarketInfo.getInstance().getCompositeIndex().getPercent() + "%");
 
     }
 }
