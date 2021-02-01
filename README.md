@@ -4,6 +4,8 @@
 
 为新手投资者准备的安卓股票投资模拟器！
 
+Socket Server代码: https://github.com/RobertYYF/StockSimulator_SocketServer
+
 v0: 完成页面布局和爬虫获取信息
 
 v1.0： 使用SQLite存储用户信息，在客户端本地运行买入卖出监听操作
